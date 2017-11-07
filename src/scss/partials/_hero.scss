@@ -1,0 +1,48 @@
+.hero-container {
+	position: relative;
+}
+
+.hero {
+	animation-name: rotateSkin;
+	animation-duration: 80000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+	background-image: url('/assets/img/hero.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 950px;
+	height: 950px;
+	border-radius: 50%;
+
+	transform-origin: 50% 50%;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+
+	&.mask {
+		position: absolute;
+		z-index: 10;
+		background-image: url('/assets/img/hero-mask.png');
+		animation-name: rotateRight;
+	}
+}
+
+@keyframes rotateSkin {
+  0% {
+    transform: rotate(-75deg);
+  }
+  50% {
+    transform: rotate(75deg);
+  }
+  100% {
+    transform: rotate(-75deg);
+  }
+}
+@keyframes rotateRight {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-359deg);
+  }
+}
