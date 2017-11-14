@@ -393,7 +393,15 @@ textarea {
   width: 100%; }
 
 .hero-container {
-  position: relative; }
+  padding: auto 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
 
 .hero {
   animation-name: rotateSkin;
@@ -405,12 +413,8 @@ textarea {
   background-repeat: no-repeat;
   width: 950px;
   height: 950px;
-  border-radius: 50%;
-  position: absolute; }
+  border-radius: 50%; }
   .hero.mask {
-    position: absolute;
-    top: 0;
-    left: 0;
     z-index: 10;
     background-image: url("/assets/img/hero-mask.png");
     animation-name: rotateRight; }
