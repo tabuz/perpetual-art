@@ -1,14 +1,3 @@
-.hero-wrapper {
-	width:100%;
-}
-.hero-container {
-	padding: auto 0;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
-
 .hero {
 	animation-name: rotateSkin;
 	animation-duration: 80000ms;
@@ -16,21 +5,38 @@
     animation-timing-function: linear;
 	background-image: url('/assets/img/hero.jpg');
 	background-size: contain;
+	background-size: 100%;
+	background-position: 50% 50%;
 	background-repeat: no-repeat;
-	width: 950px;
-	height: 950px;
+	max-width: 750px;
+	max-height: 750px;
 	border-radius: 50%;
 
-	@media #{$medium-and-down} {
-    	max-width: 250px;
+	@media all and (max-width: 650px) {
     	max-height: 250px;
-  	}
+    	max-width: 250px;
+    }
+
 	&.mask {
 		z-index: 10;
 		background-image: url('/assets/img/hero-mask.png');
 		animation-name: rotateRight;
+		background-size: 100%;
+    	
 	}
+
 }
+.hero-wrapper {
+	width:100%;
+}
+.hero-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+
 
 @keyframes rotateSkin {
   0% {

@@ -11,17 +11,22 @@
   'use strict';
 
   $(function () {
+  	
+   	function setHeroSize() {
+    	var browserHeight = jQuery(window).height();
+    	var browserWidth = jQuery(window).width();
 
-  	function setHeroSize() {
-    	var browserHeight = jQuery(window).height()
-    	$('.hero-wrapper').css('height', browserHeight - 100px);
-    	$('.hero').css('height', 0.75 * browserHeight);
-    	$('.hero').css('width', 0.75 * browserHeight);
-    	//$('.hero').css('left', '150px');
+    	$('.hero-wrapper').css('height', (browserHeight - 130));
+    	$('.hero').css('height', (0.75 * browserWidth));
+    	$('.hero').css('width', (0.75 * browserWidth));
+
+    	var wrapperHeight = Number($('.hero-wrapper').css('height').replace('px', ''));
+    	var heroHeight = Number($('.hero').css('height').replace('px', ''));
+
+    	$('.hero-container').css('margin-top', (wrapperHeight - heroHeight)/2);
 	}
 
     $(window).on('resize', function () {
-    	console.log('resize');
     	setHeroSize();
 	});
 
