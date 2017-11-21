@@ -1,0 +1,19 @@
+@keyframes rotateSkin {
+  0% {
+    transform: rotate(-75deg);
+  }
+  50% {
+    transform: rotate(75deg);
+  }
+  100% {
+    transform: rotate(-75deg);
+  }
+}
+@keyframes rotateRight {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-359deg);
+  }
+}

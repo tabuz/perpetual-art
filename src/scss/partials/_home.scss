@@ -1,0 +1,25 @@
+.home {
+	position: relative;
+	background-color: #000;
+	height: 100vh !important;
+
+	.home-bg {
+		width: 100%;
+		background-image: url('/assets/img/home.jpg');
+		background-size: contain;
+    	background-repeat-x: no-repeat;
+    	background-position-x: -90px;
+    	position: absolute;
+    	top: -30px;
+    	left: 0;
+
+		.bg-mask {
+			background-image: url('/assets/img/home-mask.png');
+			z-index: 200;
+			background-size: contain;
+    		background-repeat-x: no-repeat;
+			top: 0;
+			left: 0;
+		}
+	}
+}
