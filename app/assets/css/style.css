@@ -17,7 +17,7 @@ html {
 
 body {
   font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
-  color: #444;
+  color: #DDDDDD;
   transition: all .4s .3s ease-in; }
 
 body, html {
@@ -413,6 +413,7 @@ textarea {
     background-size: 100%; }
 
 .hero-wrapper {
+  margin-bottom: 0 !important;
   width: 100%; }
 
 .hero-container {
@@ -427,24 +428,56 @@ textarea {
 
 .home {
   position: relative;
-  background-color: #000;
   height: 100vh !important; }
   .home .home-bg {
     width: 100%;
-    background-image: url("/assets/img/home.jpg");
-    background-size: contain;
-    background-repeat-x: no-repeat;
-    background-position-x: -90px;
+    height: 100%;
+    background-color: #000000;
     position: absolute;
-    top: -30px;
-    left: 0; }
+    top: -3.6rem;
+    overflow: hidden; }
     .home .home-bg .bg-mask {
-      background-image: url("/assets/img/home-mask.png");
       z-index: 200;
-      background-size: contain;
-      background-repeat-x: no-repeat;
       top: 0;
       left: 0; }
+    .home .home-bg img {
+      position: absolute;
+      filter: drop-shadow(0px 0px 50px black); }
+    .home .home-bg .bg {
+      -ms-transform: translate(-50px, 0);
+          transform: translate(-50px, 0); }
+
+.home-caption {
+  padding: 4rem 2rem !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-family: Raleway;
+  text-align: center;
+  z-index: 999999; }
+  .home-caption h1 {
+    margin: 0;
+    border-top: 1px solid #DDDDDD;
+    color: #DDDDDD;
+    font-size: 4.3rem;
+    text-transform: uppercase;
+    font-weight: 400; }
+  .home-caption h2 {
+    color: white;
+    border-top: 1px solid #DDDDDD;
+    margin-bottom: 0; }
+  .home-caption span {
+    font-size: 2.5rem;
+    border-bottom: 1px solid #DDDDDD; }
+  .home-caption .caption-border {
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+    border-bottom: 1px solid #DDDDDD; }
+  .home-caption p {
+    font-size: 2.5rem;
+    border-bottom: 1px solid #DDD;
+    border-top: 0;
+    margin-bottom: 0;
+    padding: 4rem 0 !important; }
 
 .logo {
   margin: -58px 0 0 -100px;
@@ -453,10 +486,10 @@ textarea {
   left: 50%; }
 
 nav {
-  padding-top: 1rem;
+  height: 6rem;
   font-family: Raleway;
   font-weight: 200;
-  background-color: #000;
+  background-color: #000000;
   text-transform: uppercase; }
   nav ul {
     list-style: none; }
@@ -472,6 +505,9 @@ html {
 
 .full-height {
   height: 100vh; }
+
+.height100 {
+  height: 100%; }
 
 .no-padding {
   padding: 0 !important; }
@@ -491,6 +527,46 @@ html {
   -ms-flex-line-pack: center;
       align-content: center; }
 
+.content-wrapper {
+  width: 1100px;
+  margin: 0 auto; }
+
+.flex-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  max-width: 1100px;
+  margin: 0 auto; }
+
+.wrapper {
+  position: relative;
+  z-index: 100; }
+
+.padding {
+  padding: 2rem !important; }
+
+.padding-bottom {
+  padding-bottom: 2rem !important; }
+
+.double-padding {
+  padding: 4rem !important; }
+
+.no-padding {
+  padding: 0 !important; }
+
+.no-padding-bottom {
+  padding-bottom: 0 !important; }
+
+.margin-bottom {
+  margin-bottom: 2rem; }
+
 @keyframes rotateSkin {
   0% {
     transform: rotate(-75deg); }
@@ -505,12 +581,24 @@ html {
   100% {
     transform: rotate(-359deg); } }
 
+@keyframes slideRightInsetShadow {
+  0% {
+    box-shadow: inset 0px 0px 200px 100px black;
+    transform: translate(-650px, 0); }
+  100% {
+    box-shadow: inset 0px 0px 200px 100px black;
+    transform: translate(0px, 0); } }
+
 @font-face {
   font-family: 'Font-Name';
   src: url("../fonts/font-name.eot");
   src: url("../fonts/font-name.eot?#iefix") format("embedded-opentype"), url("../fonts/font-name.woff") format("woff"), url("../fonts/font-name.ttf") format("truetype"), url("../fonts/font-name.svg#font-name") format("svg");
   font-weight: normal;
   font-style: normal; }
+
+h1, h2, h3, h4, h5, h6, span, p {
+  margin: 0;
+  padding: 0; }
 
 ::-moz-selection {
   background: #333;

@@ -1,25 +1,69 @@
 .home {
 	position: relative;
-	background-color: #000;
 	height: 100vh !important;
 
 	.home-bg {
 		width: 100%;
-		background-image: url('/assets/img/home.jpg');
-		background-size: contain;
-    	background-repeat-x: no-repeat;
-    	background-position-x: -90px;
+		height: 100%;
+		background-color: $black;
     	position: absolute;
-    	top: -30px;
-    	left: 0;
+    	top: -(0.6 * $nav-height);
+    	overflow: hidden;
 
 		.bg-mask {
-			background-image: url('/assets/img/home-mask.png');
 			z-index: 200;
-			background-size: contain;
-    		background-repeat-x: no-repeat;
 			top: 0;
 			left: 0;
 		}
+		img {
+			position: absolute;
+			filter: drop-shadow(0px 0px 50px black);
+		}
+
+		.bg {
+			transform: translate(-50px, 0);
+		}
+	}
+}
+
+.home-caption {
+	padding: $double-base-padding $base-padding !important;
+	background-color: $semi-transparent;
+	font-family: Raleway;
+	text-align: center;
+	z-index: 999999;
+
+	h1 {
+		margin: 0;
+		//padding: $double-base-padding 0;
+		// background-color: black;
+		border-top: 1px solid $base;
+		color: $base;
+	    font-size: 4.3rem;
+    	text-transform: uppercase;
+    	font-weight: 400;
+	}
+	h2 {
+		color: white;
+
+		border-top: 1px solid $base;
+		margin-bottom: 0;
+	}
+	span {
+		font-size: 2.5rem;
+		border-bottom: 1px solid $base;
+	}
+	.caption-border {
+		margin: 0 auto;
+		display: block;
+		width: 80%;
+		border-bottom: 1px solid $base;;
+	}
+	p {
+		font-size: 2.5rem;
+		border-bottom: 1px solid #DDD;
+		border-top: 0;
+		margin-bottom: 0;
+		padding: $double-base-padding 0!important;
 	}
 }

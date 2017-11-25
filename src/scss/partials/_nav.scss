@@ -1,8 +1,8 @@
 nav {
-	padding-top: 1rem;
+  height: $nav-height;
 	font-family: Raleway;
 	font-weight: 200;
-	background-color: #000;
+	background-color: $primary;
 	text-transform: uppercase;
   ul {
     list-style: none;
@@ -12,7 +12,7 @@ nav {
       	font-size: 2.1rem;
 
         &:hover {
-          background-color: rgba(255, 255, 255, 0.1);
+          background-color: $semi-transparent;
         }
       }
     }

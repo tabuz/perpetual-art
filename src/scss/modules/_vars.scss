@@ -1,3 +1,15 @@
-$base : #F7F6F0;
-$darken : darken(#F7F6F0 , 30%);
+// Colors
+
+$primary : #000000; 
+$base : #DDDDDD;
+$black : #000000;
+$semi-transparent : rgba(255, 255, 255, 0.1);
+$base-darken : darken($base , 90%);
 $back: darken(#F7F6F0, 40%);
+
+// Dimensions
+$base-value: 2rem;
+$base-padding: $base-value;
+$base-margin: $base-value;
+$double-base-padding: 2 * $base-padding;
+$nav-height: 6rem;

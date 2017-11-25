@@ -8,7 +8,7 @@ html {
 }
 body {
   font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
-  color: #444;
+  color: $base;
   transition: all .4s .3s ease-in;
 }
 body,html{

@@ -17,3 +17,15 @@
     transform: rotate(-359deg);
   }
 }
+
+
+@keyframes slideRightInsetShadow {
+  0% {
+    box-shadow: inset 0px 0px 200px 100px rgba(0,0,0,1);
+    transform: translate(-650px, 0);
+  }
+  100% {
+    box-shadow: inset 0px 0px 200px 100px rgba(0,0,0,1);
+    transform: translate(0px, 0);
+  }
+}
