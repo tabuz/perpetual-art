@@ -23,18 +23,24 @@
       var wrapperHeight = Number($('.hero-wrapper').css('height').replace('px', ''));
       var heroHeight = Number($('.hero').css('height').replace('px', ''));
 
-      $('.hero-container').css('margin-top', (wrapperHeight - heroHeight)/2);
+      $('.hero-container').css('padding-top', (wrapperHeight - heroHeight)/2);
     }
 
     function setElementsWidth() {
-      console.log($('.nav-wrapper.container').css('width'), $('.home-caption'));
+      $('.home').css('height', $(window).height());
       $('.wrapper').css('width', $('.nav-wrapper.container').css('width'));
       $('.home-caption').css('width', $('.nav-wrapper ul').css('width'));
+      $('.home-icons').css('width', $('.nav-wrapper ul').css('width'));
     }
 
     $(window).on('resize', function () {
     	setHeroSize();
       setElementsWidth();});
+
+    $('nav a').on('click', function () {
+      $('nav a').removeClass('active');
+      $(this).addClass('active');
+    });
 
       setHeroSize();
       setElementsWidth();

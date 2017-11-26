@@ -14,93 +14,93 @@
 <body>
   <script src="assets/components/jquery/jquery.min.js"></script>
   <script src="assets/js/scripts.min.js"></script>
+  <script src="assets/js/smooth-scrool.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
   <div class="row hero-wrapper">
     <div class="hero-container">
       <div class="hero">
-        <div class="hero mask">
-          <img id="hero-mask" class="responsive-img" />
-        </div>
+        <div class="hero mask"></div>
       </div>      
     </div>
   </div>
 
-  <nav role="navigation">
-    <div class="nav-wrapper container">
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Me.</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Testimonials</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+  <nav id="home" role="navigation">
+    <div class="content-wrapper">
+      <div class="nav-wrapper container">
+        <ul class="right hide-on-med-and-down">
+          <li><a data-scroll href="#home">Home</a></li>
+          <li><a data-scroll href="#me">Me.</a></li>
+          <li><a data-scroll href="#gallery">Gallery</a></li>
+          <li><a data-scroll href="#testimonials">Testimonials</a></li>
+          <li><a data-scroll href="#contact">Contact</a></li>
+        </ul>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Me.</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Testimonials</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Me.</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
 
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
     </div>
   </nav>
 
-  <div id="home" class="home" class="no-padding full-height">
-    <div class="row wrapper height100">
-      <div class="col l6 m6 s12 right home-caption">
-        <h1 class="padding">Creativity in motion</h1>
-
-        <h2 class="padding no-padding-bottom">Damian Michalak</h2>
-        <span class="padding">Professional tattoo artist</span>
-       <!--  <span class="caption-border"></span> -->
-        <p class="padding">'The boss' who has been tattooing since 209 and has been drawing since he was 8 years old, he has extensive experience in designing and creating tattoos taking into account all customers specific needs in order to create their perfect design.</p>
+  <div class="home" class="no-padding full-height">
+    <div class="content-wrapper">
+      <div class="row wrapper full-heigh">
+        <div class="home-caption">
+          <h1 class="padding">Creativity in motion</h1>
+          <h2 class="padding no-padding-bottom">Damian Michalak</h2>
+          <span class="padding no-padding-top">Professional tattoo artist</span>
+         <!--  <span class="caption-border"></span> -->
+          <p class="padding">'The boss' who has been tattooing since 209 and has
+           been drawing since he was 8 years old, he has extensive experience
+           in designing and creating tattoos taking into account all customers
+           specific needs in order to create their perfect design.</p>
+        </div>
+        <div class="home-icons">
+          <img class="social-icon" src="/assets/img/facebook.svg" alt="facebook-social icon"/>
+          <img class="social-icon" src="/assets/img/instagram.svg" alt="instagram-social icon"/>
+          <img class="social-icon" src="/assets/img/pinterest.svg" alt="pinterest-social icon"/>
+          <img class="social-icon" src="/assets/img/youtube.svg" alt="youtube-social icon"/>
+          <img class="social-icon" src="/assets/img/google.svg" alt="google-social icon"/>
+        </div>
       </div>
-    </div>
-    <div class="row home-bg ">
-      <img class="responsive-img bg" src="/assets/img/home.jpg"/>
-      <img class="responsive-img" src="/assets/img/home-mask-2.png"/>
+      <div class="row home-bg ">
+        <img class="responsive-img bg" src="/assets/img/home.jpg"/>
+        <img class="responsive-img" src="/assets/img/home-mask-2.png"/>
+      </div>
+      <img class="home-logo" src="/assets/img/logo.png" alt="Damian Michalak Tattoo Artist Logo" />
     </div>
   </div>
 
 
   <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+    <div class="section padding-bottom">
+      <div class="row no-margin">
+        <div class="col l6 m6 s12">
+          <div class="home-section">
+            <div class="display-flex flex-center margin-auto">
+              <img class="icon" src="/assets/img/section-icon-fb.jpg" />
+              <p> Follow me on Facebook !</p>
+            </div>
           </div>
         </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+        <div class="col l6 m6 s12">
+          <div class="home-section">
+            <div class="display-flex flex-center margin-auto">
+              <img class="icon" src="/assets/img/section-icon-tc.jpg" />
+              <p>Terms & Conditions</p>
+            </div>
           </div>
         </div>
       </div>
-
-    </div>
   </div>
+</div>
 
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
@@ -127,7 +127,7 @@
     </div>
   </div>
 
-  <div class="parallax-container valign-wrapper">
+  <div id="gallery" class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
@@ -178,6 +178,12 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="assets/js/materialize.js"></script>
   <script src="assets/js/init.js"></script>
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 1000,
+      easing: 'easeInOutCubic',
+    });
+  </script>
 
   </body>
 </html>

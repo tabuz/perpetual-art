@@ -1,6 +1,7 @@
 .home {
+	background-color: $black;
 	position: relative;
-	height: 100vh !important;
+	//height: 100vh !important;
 
 	.home-bg {
 		width: 100%;
@@ -18,6 +19,10 @@
 		img {
 			position: absolute;
 			filter: drop-shadow(0px 0px 50px black);
+
+			@media only screen and (max-width:480px) {
+				top: 150px;
+			}
 		}
 
 		.bg {
@@ -27,30 +32,34 @@
 }
 
 .home-caption {
+    margin-left: auto;
 	padding: $double-base-padding $base-padding !important;
 	background-color: $semi-transparent;
-	font-family: Raleway;
 	text-align: center;
-	z-index: 999999;
+	z-index: 300;
+	@media only screen and (max-width:480px) {
+		position: relative;
+		top: 250px;
+		width: 100% !important;
+		margin: 0 auto !important;
+	}
 
 	h1 {
 		margin: 0;
-		//padding: $double-base-padding 0;
-		// background-color: black;
 		border-top: 1px solid $base;
 		color: $base;
-	    font-size: 4.3rem;
+	    font-size: 1.6rem;
     	text-transform: uppercase;
     	font-weight: 400;
 	}
 	h2 {
 		color: white;
-
+		font-size: 2rem;
 		border-top: 1px solid $base;
 		margin-bottom: 0;
 	}
 	span {
-		font-size: 2.5rem;
+		font-size: 0.9rem;
 		border-bottom: 1px solid $base;
 	}
 	.caption-border {
@@ -60,10 +69,83 @@
 		border-bottom: 1px solid $base;;
 	}
 	p {
-		font-size: 2.5rem;
+		font-size: 1rem;
 		border-bottom: 1px solid #DDD;
 		border-top: 0;
 		margin-bottom: 0;
 		padding: $double-base-padding 0!important;
+	}
+}
+
+.home-logo {
+    max-width: $logo-width;
+    position: absolute;
+    bottom: (0.6 * $nav-height) + $double-base-padding;
+    right: $double-base-padding;
+    filter: invert(1);
+
+    @media only screen and (max-width:480px) {
+    	top: 10px;
+		left: 0; 
+		right: 0; 
+		margin-left: auto; 
+		margin-right: auto;
+	}
+}
+.home-icons {
+	text-align: center;
+	margin-left: auto;
+	padding-top: $double-base-padding;
+
+	@media only screen and (max-width:480px) {
+		display: inline;
+		margin: 0;
+		position: relative;
+		right: 30px;
+		bottom: 30px;
+	}
+
+	.social-icon {
+		width: 35px;
+		height: auto;
+		padding: 0.5 * $base-padding;
+		margin-right: $base-margin;
+    	box-sizing: content-box;
+    	border: 1px solid transparent;
+    	filter: invert(1);
+    	transition: all .3s ease-in;
+    	cursor: pointer;
+
+		&:hover {
+			border: 1px solid black;
+		}
+		
+	}
+}
+.home-section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	cursor: pointer;
+
+	@media only screen and (max-width:480px) {
+		margin-top: 150px;
+	}
+
+	&:hover {
+		p {
+			border-bottom: 1px solid $black;
+		}
+	}
+
+	.icon {
+		width: 75px;
+		height: 75px;
+		clip-path: polygon(50% 3%, 95% 25%, 95% 75%, 50% 97%, 5% 75%, 5% 25%);
+	}
+	p {
+		color: $black;
+		font-size: 1rem;
+		margin-left: $base-margin;
 	}
 }

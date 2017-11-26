@@ -8,8 +8,9 @@ $base-darken : darken($base , 90%);
 $back: darken(#F7F6F0, 40%);
 
 // Dimensions
-$base-value: 2rem;
+$logo-width: 250px;
+$base-value: 1rem;
 $base-padding: $base-value;
 $base-margin: $base-value;
 $double-base-padding: 2 * $base-padding;
-$nav-height: 6rem;
+$nav-height: 3rem;

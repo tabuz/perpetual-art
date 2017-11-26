@@ -13,10 +13,10 @@
   text-rendering: optimizeLegibility; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 24px; }
 
 body {
-  font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
+  font: 300 13px/1.6 Raleway, 'Helvetica Neue', Helvetica, Arial;
   color: #DDDDDD;
   transition: all .4s .3s ease-in; }
 
@@ -427,14 +427,14 @@ textarea {
       align-items: center; }
 
 .home {
-  position: relative;
-  height: 100vh !important; }
+  background-color: #000000;
+  position: relative; }
   .home .home-bg {
     width: 100%;
     height: 100%;
     background-color: #000000;
     position: absolute;
-    top: -3.6rem;
+    top: -1.8rem;
     overflow: hidden; }
     .home .home-bg .bg-mask {
       z-index: 200;
@@ -443,29 +443,39 @@ textarea {
     .home .home-bg img {
       position: absolute;
       filter: drop-shadow(0px 0px 50px black); }
+      @media only screen and (max-width: 480px) {
+        .home .home-bg img {
+          top: 150px; } }
     .home .home-bg .bg {
       -ms-transform: translate(-50px, 0);
           transform: translate(-50px, 0); }
 
 .home-caption {
-  padding: 4rem 2rem !important;
+  margin-left: auto;
+  padding: 2rem 1rem !important;
   background-color: rgba(255, 255, 255, 0.1);
-  font-family: Raleway;
   text-align: center;
-  z-index: 999999; }
+  z-index: 300; }
+  @media only screen and (max-width: 480px) {
+    .home-caption {
+      position: relative;
+      top: 250px;
+      width: 100% !important;
+      margin: 0 auto !important; } }
   .home-caption h1 {
     margin: 0;
     border-top: 1px solid #DDDDDD;
     color: #DDDDDD;
-    font-size: 4.3rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     font-weight: 400; }
   .home-caption h2 {
     color: white;
+    font-size: 2rem;
     border-top: 1px solid #DDDDDD;
     margin-bottom: 0; }
   .home-caption span {
-    font-size: 2.5rem;
+    font-size: 0.9rem;
     border-bottom: 1px solid #DDDDDD; }
   .home-caption .caption-border {
     margin: 0 auto;
@@ -473,11 +483,72 @@ textarea {
     width: 80%;
     border-bottom: 1px solid #DDDDDD; }
   .home-caption p {
-    font-size: 2.5rem;
+    font-size: 1rem;
     border-bottom: 1px solid #DDD;
     border-top: 0;
     margin-bottom: 0;
-    padding: 4rem 0 !important; }
+    padding: 2rem 0 !important; }
+
+.home-logo {
+  max-width: 250px;
+  position: absolute;
+  bottom: 3.8rem;
+  right: 2rem;
+  filter: invert(1); }
+  @media only screen and (max-width: 480px) {
+    .home-logo {
+      top: 10px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto; } }
+
+.home-icons {
+  text-align: center;
+  margin-left: auto;
+  padding-top: 2rem; }
+  @media only screen and (max-width: 480px) {
+    .home-icons {
+      display: inline;
+      margin: 0;
+      position: relative;
+      right: 30px;
+      bottom: 30px; } }
+  .home-icons .social-icon {
+    width: 35px;
+    height: auto;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    box-sizing: content-box;
+    border: 1px solid transparent;
+    filter: invert(1);
+    transition: all .3s ease-in;
+    cursor: pointer; }
+    .home-icons .social-icon:hover {
+      border: 1px solid black; }
+
+.home-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  cursor: pointer; }
+  @media only screen and (max-width: 480px) {
+    .home-section {
+      margin-top: 150px; } }
+  .home-section:hover p {
+    border-bottom: 1px solid #000000; }
+  .home-section .icon {
+    width: 75px;
+    height: 75px;
+    -webkit-clip-path: polygon(50% 3%, 95% 25%, 95% 75%, 50% 97%, 5% 75%, 5% 25%);
+            clip-path: polygon(50% 3%, 95% 25%, 95% 75%, 50% 97%, 5% 75%, 5% 25%); }
+  .home-section p {
+    color: #000000;
+    font-size: 1rem;
+    margin-left: 1rem; }
 
 .logo {
   margin: -58px 0 0 -100px;
@@ -486,7 +557,7 @@ textarea {
   left: 50%; }
 
 nav {
-  height: 6rem;
+  height: 3rem;
   font-family: Raleway;
   font-weight: 200;
   background-color: #000000;
@@ -496,21 +567,31 @@ nav {
     nav ul li {
       display: block; }
       nav ul li a {
-        font-size: 2.1rem; }
+        font-size: .8rem; }
         nav ul li a:hover {
           background-color: rgba(255, 255, 255, 0.1); }
+      nav ul li .active {
+        background-color: rgba(255, 255, 255, 0.1) !important; }
 
 html {
   overflow-x: hidden; }
 
-.full-height {
+.vh-height {
   height: 100vh; }
 
-.height100 {
+.full-height {
   height: 100%; }
 
 .no-padding {
   padding: 0 !important; }
+
+.display-flex {
+  display: -ms-flexbox;
+  display: flex; }
+
+.flex-center {
+  -ms-flex-align: center;
+      align-items: center; }
 
 .nav-wrapper {
   z-index: 200; }
@@ -527,10 +608,6 @@ html {
   -ms-flex-line-pack: center;
       align-content: center; }
 
-.content-wrapper {
-  width: 1100px;
-  margin: 0 auto; }
-
 .flex-wrapper {
   display: -ms-flexbox;
   display: flex;
@@ -545,27 +622,42 @@ html {
   max-width: 1100px;
   margin: 0 auto; }
 
+.content-wrapper {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1900px;
+  height: 100%; }
+
 .wrapper {
   position: relative;
   z-index: 100; }
 
 .padding {
-  padding: 2rem !important; }
+  padding: 1rem !important; }
 
 .padding-bottom {
-  padding-bottom: 2rem !important; }
+  padding-bottom: 1rem !important; }
 
 .double-padding {
-  padding: 4rem !important; }
+  padding: 2rem !important; }
 
 .no-padding {
   padding: 0 !important; }
+
+.no-padding-top {
+  padding-top: 0 !important; }
 
 .no-padding-bottom {
   padding-bottom: 0 !important; }
 
 .margin-bottom {
-  margin-bottom: 2rem; }
+  margin-bottom: 1rem; }
+
+.no-margin {
+  margin: 0 !important; }
+
+.margin-auto {
+  margin: 0 auto; }
 
 @keyframes rotateSkin {
   0% {
@@ -619,6 +711,14 @@ h1, h2, h3, h4, h5, h6, span, p {
   background: #333;
   color: #fff;
   text-shadow: none; }
+
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 14px; } }
+
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 18px; } }
 
 @media print {
   * {

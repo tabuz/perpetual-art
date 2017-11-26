@@ -9,11 +9,13 @@ nav {
     li {
     	display: block;
       a {
-      	font-size: 2.1rem;
-
+      	font-size: .8rem;
         &:hover {
           background-color: $semi-transparent;
         }
+      }
+      .active {
+        background-color: $semi-transparent !important; 
       }
     }
   }
