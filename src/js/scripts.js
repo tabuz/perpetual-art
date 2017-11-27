@@ -1,41 +1,44 @@
 (function ($, window, document, undefined) {
 
-  'use strict';
+    'use strict';
 
-  $(function () {
+    $(function () {
 
-    function setHeroSize() {
-      var browserHeight = jQuery(window).height();
-      var browserWidth = jQuery(window).width();
+        function setHeroSize() {
+            var browserHeight = jQuery(window).height();
+            var browserWidth = jQuery(window).width();
 
-      $('.hero-wrapper').css('height', (browserHeight));
-      $('.hero').css('height', (0.75 * browserWidth));
-      $('.hero').css('width', (0.75 * browserWidth));
+            $('.hero-wrapper').css('height', (browserHeight));
+            $('.hero').css('height', (0.75 * browserWidth));
+            $('.hero').css('width', (0.75 * browserWidth));
 
-      var wrapperHeight = Number($('.hero-wrapper').css('height').replace('px', ''));
-      var heroHeight = Number($('.hero').css('height').replace('px', ''));
+            var wrapperHeight = Number($('.hero-wrapper').css('height').replace('px', ''));
+            var heroHeight = Number($('.hero').css('height').replace('px', ''));
 
-      $('.hero-container').css('padding-top', (wrapperHeight - heroHeight)/2);
-    }
+            $('.hero-container').css('padding-top', (wrapperHeight - heroHeight)/2);
+        }
 
-    function setElementsWidth() {
-      $('.home').css('height', $(window).height());
-      $('.wrapper').css('width', $('.nav-wrapper.container').css('width'));
-      $('.home-caption').css('width', $('.nav-wrapper ul').css('width'));
-      $('.home-icons').css('width', $('.nav-wrapper ul').css('width'));
-    }
+        function setElementsWidth() {
+            $('.home').css('height', $(window).height());
+            $('.wrapper').css('width', $('.nav-wrapper.container').css('width'));
+            $('.home-caption').css('width', $('.nav-wrapper ul').css('width'));
+            $('.home-icons').css('width', $('.nav-wrapper ul').css('width'));
+        }
 
-    $(window).on('resize', function () {
-    	setHeroSize();
-      setElementsWidth();});
+        $(window).on('load', function () {
+            
+        });
+        $(window).on('resize', function () {
+        	setHeroSize();
+            setElementsWidth();});
 
-    $('nav a').on('click', function () {
-      $('nav a').removeClass('active');
-      $(this).addClass('active');
-    });
+        $('nav a').on('click', function () {
+            $('nav a').removeClass('active');
+            $(this).addClass('active');
+        });
 
-      setHeroSize();
-      setElementsWidth();
+        setHeroSize();
+        setElementsWidth();
   });
 
 })(jQuery, window, document);

@@ -18,7 +18,7 @@
 		}
 		img {
 			position: absolute;
-			filter: drop-shadow(0px 0px 50px black);
+			//filter: drop-shadow(0px 0px 50px black);
 
 			@media only screen and (max-width:480px) {
 				top: 150px;
@@ -27,6 +27,30 @@
 
 		.bg {
 			transform: translate(-50px, 0);
+		}
+		.trg-1 {
+			clip-path: polygon(5.5% 5%, 49% 5%, 22.5% 70%);
+			&:hover {
+				clip-path: polygon(0.5% 0%, 54% 0%, 27.5% 75%);
+			}
+		}
+		.trg-2 {
+				clip-path: polygon(5% 100%, 17.5% 55%, 31.5% 100%);
+			&:hover {
+				clip-path: polygon(0% 100%, 17.5% 50%, 36.5% 100%);
+			}
+		}
+		.trg-3 {
+			clip-path: polygon(33% 65%, 44% 35%, 55% 65%);
+			&:hover {
+				clip-path: polygon(28% 75%, 44% 30%, 60% 75%);
+			}
+		}
+		.trg-4 {
+			clip-path: polygon(44.5% 30%, 58.5% 30%, 51.5% 50%);
+		}
+		.trg-5 {
+			clip-path: polygon(46% 75.5%, 58.5% 75.5%, 52% 93%);
 		}
 	}
 }
