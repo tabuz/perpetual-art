@@ -29,3 +29,62 @@
     transform: translate(0px, 0);
   }
 }
+
+@keyframes triangleOne {
+  0% {
+    clip-path: polygon(27.5% 5%, 27.5% 5%, 27.5% 5%);
+  }
+  100% {
+    clip-path: polygon(0.5% 0%, 54% 0%, 27.5% 75%);
+  }
+}
+
+@keyframes triangleTwo {
+  0% {
+    clip-path: polygon(17.5% 83%, 17.5% 83%, 17.5% 83%);    
+  }
+  100% {
+    clip-path: polygon(0% 100%, 17.5% 50%, 35% 100%);
+  }
+
+}
+@keyframes triangleThree {
+  0% {
+    clip-path: polygon(44% 60.5%, 44% 60.5%, 44% 60.5%);
+  }
+  100% {
+    clip-path: polygon(28.5% 75%, 44.5% 30%, 60% 75%);
+  }
+}
+@keyframes triangleFour {
+  0% {
+    clip-path: polygon(51.5% 36.5%, 51.5% 36.5%, 51.5% 36.5%);
+  }
+  100% {
+    clip-path: polygon(45.5% 30%, 58.5% 30%, 52% 50%);
+  }
+}
+@keyframes triangleFive {
+  0% {
+    clip-path: polygon(52.5% 82%, 52.5% 82%, 52.5% 82%);
+  }
+  100% {
+    clip-path: polygon(46% 76%, 58.5% 76%, 52% 93%);
+  }
+}
+@keyframes blur {
+  0% {
+    filter: blur(6px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}

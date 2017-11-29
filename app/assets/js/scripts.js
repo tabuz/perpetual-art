@@ -44,7 +44,6 @@
             $('nav a').removeClass('active');
             $(this).addClass('active');
         });
-
         setHeroSize();
         setElementsWidth();
   });
@@ -65,4 +64,30 @@
 //     $heroMask.css('filter', 'invert(' + fadeToColor + ')');
 //     $shadower.css('background-color', 'rgba(0,0,0,' + fadeToColor + ')');
 
+// });
+
+// $(function(){
+//     var fired = false;
+//     $(window).scroll(function(){
+//         if($(this).scrollTop()>= 1 && fired === false){
+//             $('html, body').animate({
+//                 scrollTop: $('#home').offset().top
+//             }, 800);
+//             fired = true;
+//         }
+//     });
+// });
+
+// $(document).on('wheel', function(e){
+//     $(document).bind("mousewheel", function() {
+//         return false;
+//     });
+//     if(e.originalEvent.deltaY > 0 && fired === false) {
+
+//         fired = true;
+//         $('html, body').animate({
+//             scrollTop: $('#home').offset().top
+//         }, 1000);
+            
+//     }
 // });

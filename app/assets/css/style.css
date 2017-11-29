@@ -438,7 +438,8 @@ textarea {
     background-color: #000000;
     position: absolute;
     top: -1.8rem;
-    overflow: hidden; }
+    overflow: hidden;
+    transition: all .4s .3s ease-in; }
     .home .home-bg .bg-mask {
       z-index: 200;
       top: 0;
@@ -449,32 +450,29 @@ textarea {
         .home .home-bg img {
           top: 150px; } }
     .home .home-bg .bg {
+      animation-timing-function: cubic-bezier(0.79, 1.64, 0.2, -1.25);
       -ms-transform: translate(-50px, 0);
           transform: translate(-50px, 0); }
     .home .home-bg .trg-1 {
-      -webkit-clip-path: polygon(5.5% 5%, 49% 5%, 22.5% 70%);
-              clip-path: polygon(5.5% 5%, 49% 5%, 22.5% 70%); }
-      .home .home-bg .trg-1:hover {
-        -webkit-clip-path: polygon(0.5% 0%, 54% 0%, 27.5% 75%);
-                clip-path: polygon(0.5% 0%, 54% 0%, 27.5% 75%); }
+      -webkit-clip-path: polygon(0.5% 0%, 54% 0%, 27.5% 75%);
+              clip-path: polygon(0.5% 0%, 54% 0%, 27.5% 75%);
+      animation: triangleOne 4s 1, blur 3s 1, fadeIn 4s 1; }
     .home .home-bg .trg-2 {
-      -webkit-clip-path: polygon(5% 100%, 17.5% 55%, 31.5% 100%);
-              clip-path: polygon(5% 100%, 17.5% 55%, 31.5% 100%); }
-      .home .home-bg .trg-2:hover {
-        -webkit-clip-path: polygon(0% 100%, 17.5% 50%, 36.5% 100%);
-                clip-path: polygon(0% 100%, 17.5% 50%, 36.5% 100%); }
+      -webkit-clip-path: polygon(0% 100%, 17.5% 50%, 35% 100%);
+              clip-path: polygon(0% 100%, 17.5% 50%, 35% 100%);
+      animation: triangleTwo 3s 1, blur 3s 1, fadeIn 4s 1; }
     .home .home-bg .trg-3 {
-      -webkit-clip-path: polygon(33% 65%, 44% 35%, 55% 65%);
-              clip-path: polygon(33% 65%, 44% 35%, 55% 65%); }
-      .home .home-bg .trg-3:hover {
-        -webkit-clip-path: polygon(28% 75%, 44% 30%, 60% 75%);
-                clip-path: polygon(28% 75%, 44% 30%, 60% 75%); }
+      -webkit-clip-path: polygon(28.5% 75%, 44.5% 30%, 60% 75%);
+              clip-path: polygon(28.5% 75%, 44.5% 30%, 60% 75%);
+      animation: triangleThree 3.3s 1, blur 3s 1, fadeIn 4s 1; }
     .home .home-bg .trg-4 {
-      -webkit-clip-path: polygon(44.5% 30%, 58.5% 30%, 51.5% 50%);
-              clip-path: polygon(44.5% 30%, 58.5% 30%, 51.5% 50%); }
+      -webkit-clip-path: polygon(45.5% 30%, 58.5% 30%, 52% 50%);
+              clip-path: polygon(45.5% 30%, 58.5% 30%, 52% 50%);
+      animation: triangleFour 3.5s 1, blur 3.5s 1, fadeIn 4s 1; }
     .home .home-bg .trg-5 {
-      -webkit-clip-path: polygon(46% 75.5%, 58.5% 75.5%, 52% 93%);
-              clip-path: polygon(46% 75.5%, 58.5% 75.5%, 52% 93%); }
+      -webkit-clip-path: polygon(46% 76%, 58.5% 76%, 52% 93%);
+              clip-path: polygon(46% 76%, 58.5% 76%, 52% 93%);
+      animation: triangleFive 3s 1, blur 3s 1, fadeIn 4s 1; }
 
 .home-caption {
   margin-left: auto;
@@ -706,6 +704,58 @@ html {
   100% {
     box-shadow: inset 0px 0px 200px 100px black;
     transform: translate(0px, 0); } }
+
+@keyframes triangleOne {
+  0% {
+    -webkit-clip-path: polygon(27.5% 5%, 27.5% 5%, 27.5% 5%);
+            clip-path: polygon(27.5% 5%, 27.5% 5%, 27.5% 5%); }
+  100% {
+    -webkit-clip-path: polygon(0.5% 0%, 54% 0%, 27.5% 75%);
+            clip-path: polygon(0.5% 0%, 54% 0%, 27.5% 75%); } }
+
+@keyframes triangleTwo {
+  0% {
+    -webkit-clip-path: polygon(17.5% 83%, 17.5% 83%, 17.5% 83%);
+            clip-path: polygon(17.5% 83%, 17.5% 83%, 17.5% 83%); }
+  100% {
+    -webkit-clip-path: polygon(0% 100%, 17.5% 50%, 35% 100%);
+            clip-path: polygon(0% 100%, 17.5% 50%, 35% 100%); } }
+
+@keyframes triangleThree {
+  0% {
+    -webkit-clip-path: polygon(44% 60.5%, 44% 60.5%, 44% 60.5%);
+            clip-path: polygon(44% 60.5%, 44% 60.5%, 44% 60.5%); }
+  100% {
+    -webkit-clip-path: polygon(28.5% 75%, 44.5% 30%, 60% 75%);
+            clip-path: polygon(28.5% 75%, 44.5% 30%, 60% 75%); } }
+
+@keyframes triangleFour {
+  0% {
+    -webkit-clip-path: polygon(51.5% 36.5%, 51.5% 36.5%, 51.5% 36.5%);
+            clip-path: polygon(51.5% 36.5%, 51.5% 36.5%, 51.5% 36.5%); }
+  100% {
+    -webkit-clip-path: polygon(45.5% 30%, 58.5% 30%, 52% 50%);
+            clip-path: polygon(45.5% 30%, 58.5% 30%, 52% 50%); } }
+
+@keyframes triangleFive {
+  0% {
+    -webkit-clip-path: polygon(52.5% 82%, 52.5% 82%, 52.5% 82%);
+            clip-path: polygon(52.5% 82%, 52.5% 82%, 52.5% 82%); }
+  100% {
+    -webkit-clip-path: polygon(46% 76%, 58.5% 76%, 52% 93%);
+            clip-path: polygon(46% 76%, 58.5% 76%, 52% 93%); } }
+
+@keyframes blur {
+  0% {
+    filter: blur(6px); }
+  100% {
+    filter: blur(0px); } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 100%; } }
 
 @font-face {
   font-family: 'Font-Name';
