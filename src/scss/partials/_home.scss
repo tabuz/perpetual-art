@@ -154,9 +154,13 @@
 		margin-top: 150px;
 	}
 
+	p {
+		border-bottom: 0.5px solid $white;
+	}
+
 	&:hover {
 		p {
-			border-bottom: 1px solid $black;
+			border-bottom: 0.5px solid $black;
 		}
 	}
 

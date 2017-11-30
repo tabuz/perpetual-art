@@ -562,8 +562,10 @@ textarea {
   @media only screen and (max-width: 480px) {
     .home-section {
       margin-top: 150px; } }
+  .home-section p {
+    border-bottom: 0.5px solid #FFF; }
   .home-section:hover p {
-    border-bottom: 1px solid #000000; }
+    border-bottom: 0.5px solid #000000; }
   .home-section .icon {
     width: 75px;
     height: 75px;
@@ -573,6 +575,12 @@ textarea {
     color: #000000;
     font-size: 1rem;
     margin-left: 1rem; }
+
+.details {
+  background-color: #000000; }
+  .details .details-caption {
+    position: relative;
+    bottom: 1rem; }
 
 .logo {
   margin: -58px 0 0 -100px;
