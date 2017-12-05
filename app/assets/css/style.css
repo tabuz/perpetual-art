@@ -397,7 +397,7 @@ textarea {
   animation-duration: 80000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  background-image: url("/assets/img/hero.jpg");
+  background-image: url("../img/hero.jpg");
   background-size: contain;
   background-size: 100%;
   background-position: 50% 50%;
@@ -411,7 +411,7 @@ textarea {
       max-width: 250px; } }
   .hero.mask {
     z-index: 10;
-    background-image: url("/assets/img/hero-mask.png");
+    background-image: url("../img/hero-mask.png");
     animation-name: rotateRight;
     background-size: 100%; }
 

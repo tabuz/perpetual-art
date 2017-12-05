@@ -20,10 +20,12 @@
             $('.hero').css('height', (0.75 * browserWidth));
             $('.hero').css('width', (0.75 * browserWidth));
 
-            var wrapperHeight = Number($('.hero-wrapper').css('height').replace('px', ''));
+            var wrapperHeight = Number(
+                $('.hero-wrapper').css('height').replace('px', '')
+            );
             var heroHeight = Number($('.hero').css('height').replace('px', ''));
 
-            $('.hero-container').css('padding-top', (wrapperHeight - heroHeight)/2);
+            $('.hero-container').css('padding-top', (wrapperHeight - heroHeight) / 2);
         }
 
         function setElementsWidth() {
@@ -33,11 +35,10 @@
             $('.home-icons').css('width', $('.nav-wrapper ul').css('width'));
         }
 
-        $(window).on('load', function () {
-            
-        });
+        $(window).on('load', function () {});
+
         $(window).on('resize', function () {
-        	setHeroSize();
+            setHeroSize();
             setElementsWidth();});
 
         $('nav a').on('click', function () {
@@ -88,6 +89,5 @@
 //         $('html, body').animate({
 //             scrollTop: $('#home').offset().top
 //         }, 1000);
-            
 //     }
 // });
