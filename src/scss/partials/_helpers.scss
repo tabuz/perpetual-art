@@ -64,9 +64,15 @@
 .margin-bottom {
 	margin-bottom: $base-margin; 
 }
+.double-margin-bottom {
+	margin-bottom: 2 * $base-margin;
+}
 .no-margin {
 	margin: 0 !important;
 }
 .margin-auto {
 	margin: 0 auto;
+}
+.text-align-center {
+	text-align: center;
 }

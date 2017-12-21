@@ -12,3 +12,15 @@ h1, h2, h3, h4, h5, h6, span, p {
 	margin: 0;
 	padding: 0;
 }
+
+.section-header {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 300;
+  border-bottom: 1px solid $base;
+
+  &.alternative-header {
+    color: $black;
+    border-bottom: 1px solid $black;
+  }
+}
