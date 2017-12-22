@@ -1,0 +1,33 @@
+#contact {
+	background-image:
+		url('../img/contact-bg-one.png'),
+		url('../img/contact-bg-two.png');
+	background-position:
+		24% 20%,
+		79% 37%;
+	background-repeat: no-repeat;
+}
+#contact-message {
+	height: 197px;
+}
+input, label, textarea {
+	color: $black !important;
+
+	&:focus {
+		border-color: $black !important;
+	}
+}
+.send-btn {
+	margin-right: 1rem;
+	color: $black;
+	margin-top: $double-base-margin;
+	background: $white;
+	border: 1px solid $black;
+	border-radius: 0;
+
+	&:hover {
+		color: $white;
+		background-color: $purple;
+		border: 1px solid $purple;
+	}
+}

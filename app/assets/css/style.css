@@ -829,6 +829,31 @@ html {
     background-color: #7400ac;
     border: 1px solid #7400ac; }
 
+#contact {
+  background-image: url("../img/contact-bg-one.png"), url("../img/contact-bg-two.png");
+  background-position: 24% 20%, 79% 37%;
+  background-repeat: no-repeat; }
+
+#contact-message {
+  height: 197px; }
+
+input, label, textarea {
+  color: #000000 !important; }
+  input:focus, label:focus, textarea:focus {
+    border-color: #000000 !important; }
+
+.send-btn {
+  margin-right: 1rem;
+  color: #000000;
+  margin-top: 2rem;
+  background: #FFF;
+  border: 1px solid #000000;
+  border-radius: 0; }
+  .send-btn:hover {
+    color: #FFF;
+    background-color: #7400ac;
+    border: 1px solid #7400ac; }
+
 .primary {
   color: #DDDDDD; }
 
@@ -894,6 +919,12 @@ html {
 .wrapper {
   position: relative;
   z-index: 100; }
+
+.row-equal-height {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: stretch;
+      align-items: stretch; }
 
 .padding {
   padding: 1rem !important; }

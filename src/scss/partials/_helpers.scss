@@ -61,6 +61,10 @@
 	position: relative;
 	z-index: 100;
 }
+.row-equal-height {
+	display: flex;
+    align-items: stretch;
+}
 
 
 

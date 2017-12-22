@@ -157,7 +157,7 @@
     <div id="booking" class="section section-margin section-padding-top secondary-gb">
         <div class="container">
             <div class="row text-center booking">
-                <div class="booking-caption double-margin-bottom">Never regreat a tattoo!</div>
+                <div class="booking-caption">Never regreat a tattoo!</div>
                 <div class="booking-testimonials">
                     <div class="testimonials">
                         <span>I came in for a cover up - Damian was very helpful and the design he came up with was fantastic. I'm very pleased with the finished design. Thank you!</span>
@@ -169,9 +169,47 @@
         </div>
     </div>
 
+    <div id="contact" class="section section-margin primary">
+        <div class="container">
+            <div class="row text-align-center double-margin-bottom">
+                <div class="text-align-center">
+                    <h2 class="section-header alternative-header margin-bottom">Contact</h2>
+                    <p class="secondary text-medium">If you have any question or want to book an apointment feel free to contact me</p>
+                </div>
+            </div>
+            <div class="row">
+                <form class="col s8 offset-s2">
+                    <div class="row ">
+                        <div class="col l6 m6 s12">
+                            <div class="input-field col s12">
+                                <input id="contact-name" type="text">
+                                <label for="contact-name">Name</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input id="contact-email" type="email" class="validate">
+                                <label for="contact-email" data-error="wrong" data-success="right">Email</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input id="contact-subject" type="text">
+                                <label for="contact-subject">Subject</label>
+                            </div>
+                        </div>
+                        <div class="col l6 m6 s12">
+                            <div class="input-field col s12">
+                                <textarea id="contact-message" class="materialize-textarea"></textarea>
+                                <label for="contact-message">Message</label>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="waves-effect waves-light btn-large right send-btn">Send</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="assets/js/materialize.js"></script>
+<script src="assets/js/materialize.min.js"></script>
 <script src="assets/js/init.js"></script>
 <script>
   var scroll = new SmoothScroll('a[href*="#"]', {
@@ -187,7 +225,7 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="assets/js/materialize.js"></script>
+  <script src="assets/js/materialize.min.js"></script>
   <script src="assets/js/init.js"></script>
   <script>
     var scroll = new SmoothScroll('a[href*="#"]', {
