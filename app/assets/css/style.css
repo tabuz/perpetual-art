@@ -694,11 +694,17 @@ html {
 .material-icons {
   vertical-align: middle; }
 
+.section-margin {
+  margin-bottom: 8rem; }
+
 .primary {
   color: #DDDDDD; }
 
 .secondary {
   color: #000000; }
+
+.secondary-gb {
+  background-color: #000000; }
 
 .text-medium {
   font-size: .9rem; }
@@ -786,6 +792,9 @@ html {
 
 .margin-bottom {
   margin-bottom: 1rem; }
+
+.margin-bottom--big {
+  margin-bottom: 4rem; }
 
 .double-margin-bottom {
   margin-bottom: 2rem; }

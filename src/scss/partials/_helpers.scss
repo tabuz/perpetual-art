@@ -4,6 +4,9 @@
 .secondary {
 	color: $black;
 }
+.secondary-gb {
+	background-color: $black;
+}
 .text-medium {
 	font-size: .9rem;
 }
@@ -77,6 +80,9 @@
 }
 .margin-bottom {
 	margin-bottom: $base-margin; 
+}
+.margin-bottom--big {
+	margin-bottom: 4 * $base-margin; 
 }
 .double-margin-bottom {
 	margin-bottom: 2 * $base-margin;
