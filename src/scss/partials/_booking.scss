@@ -1,57 +1,74 @@
-.booking-caption {
-	margin: $base-margin auto;
-	text-transform: uppercase;
-	font-size: 2rem;
-	line-height: 2.5rem;
-	border-bottom: 1px solid $base;
-	border-top: 1px solid $base;
-	width: 70%;
+#booking {
+	background-image: 
+		radial-gradient(rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.95) 35%,rgba(0,0,0,0) 100%),
+		radial-gradient(
+			rgba(0,0,0,0) 0%,
+			rgba(0,0,0,0) 45%,
+			rgba(0,0,0,1) 75%,
+			rgba(0,0,0,1) 100%
+		),
+		url('../img/hex.gif');
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
 }
-.booking-testimonials {
-	position: relative;
-	margin: 0 auto;
-	font-size: 1.9rem;
-	line-height: 2rem;
-	font-style: italic;
-	width: 65%;
-	padding: $base-padding;
-	text-align: center;
+.booking {
+	.booking-caption {
+		margin: $double-base-margin auto;
+		text-transform: uppercase;
+		font-size: 2rem;
+		line-height: 2.5rem;
+		border-bottom: 1px solid $base;
+		border-top: 1px solid $base;
+		width: 70%;
+		text-shadow: 0 0 40px $base;
+	}
+	.booking-testimonials {
+		position: relative;
+		margin: 0 auto;
+		font-size: 1.9rem;
+		line-height: 2rem;
+		font-style: italic;
+		width: 65%;
+		padding: $base-padding;
+		text-align: center;
 
-	.testimonials {
-		.testimonials-name {
-			margin-top: 1rem;
-			font-size: 1.2rem;
-		}
-		span {
-			font-weight:100;
-			&:before{
-				margin: 0;
-				content: "\"";
-				display: inline-block;
-				font-size: 5rem;
-			    position: absolute;
-			    left: -2.5%;
+		.testimonials {
+			.testimonials-name {
+				margin-top: 1rem;
+				font-size: 1.2rem;
 			}
-			&:after{
-				margin: 0;
-				content: "\"";
-				display: inline-block;
-				font-size: 5rem;
-			    position: absolute;
-				right: 2.5%;
-				bottom: 1rem;
+			span {
+				font-weight:100;
+				&:before{
+					margin: 0;
+					content: "\"";
+					display: inline-block;
+					font-size: 5rem;
+				    position: absolute;
+				    left: -2.5%;
+				}
+				&:after{
+					margin: 0;
+					content: "\"";
+					display: inline-block;
+					font-size: 5rem;
+				    position: absolute;
+					right: 2.5%;
+					bottom: 1rem;
+				}
 			}
-		}
-	}	
-}
-.book-now-btn {
-	background: transparent;
-	border: 1px solid $base;
-	border-radius: 0;
+		}	
+	}
+	.book-now-btn {
+		margin-top: $double-base-margin;
+		background: $black;
+		border: 1px solid $base;
+		border-radius: 0;
 
-	&:hover {
-		color: $base;
-		background-color: $purple;
-		border: 1px solid $purple;
+		&:hover {
+			color: $base;
+			background-color: $purple;
+			border: 1px solid $purple;
+		}
 	}
 }

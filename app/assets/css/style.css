@@ -774,16 +774,22 @@ html {
     bottom: 0;
     left: 1rem; }
 
-.booking-caption {
-  margin: 1rem auto;
+#booking {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.95) 35%, transparent 100%), radial-gradient(transparent 0%, transparent 45%, black 75%, black 100%), url("../img/hex.gif");
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
+
+.booking .booking-caption {
+  margin: 2rem auto;
   text-transform: uppercase;
   font-size: 2rem;
   line-height: 2.5rem;
   border-bottom: 1px solid #DDDDDD;
   border-top: 1px solid #DDDDDD;
-  width: 70%; }
+  width: 70%;
+  text-shadow: 0 0 40px #DDDDDD; }
 
-.booking-testimonials {
+.booking .booking-testimonials {
   position: relative;
   margin: 0 auto;
   font-size: 1.9rem;
@@ -792,19 +798,19 @@ html {
   width: 65%;
   padding: 1rem;
   text-align: center; }
-  .booking-testimonials .testimonials .testimonials-name {
+  .booking .booking-testimonials .testimonials .testimonials-name {
     margin-top: 1rem;
     font-size: 1.2rem; }
-  .booking-testimonials .testimonials span {
+  .booking .booking-testimonials .testimonials span {
     font-weight: 100; }
-    .booking-testimonials .testimonials span:before {
+    .booking .booking-testimonials .testimonials span:before {
       margin: 0;
       content: "\"";
       display: inline-block;
       font-size: 5rem;
       position: absolute;
       left: -2.5%; }
-    .booking-testimonials .testimonials span:after {
+    .booking .booking-testimonials .testimonials span:after {
       margin: 0;
       content: "\"";
       display: inline-block;
@@ -813,11 +819,12 @@ html {
       right: 2.5%;
       bottom: 1rem; }
 
-.book-now-btn {
-  background: transparent;
+.booking .book-now-btn {
+  margin-top: 2rem;
+  background: #000000;
   border: 1px solid #DDDDDD;
   border-radius: 0; }
-  .book-now-btn:hover {
+  .booking .book-now-btn:hover {
     color: #DDDDDD;
     background-color: #7400ac;
     border: 1px solid #7400ac; }
@@ -916,7 +923,7 @@ html {
   margin-bottom: 4rem; }
 
 .double-margin-bottom {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem !important; }
 
 .no-margin {
   margin: 0 !important; }
