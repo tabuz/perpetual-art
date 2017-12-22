@@ -1,3 +1,6 @@
+// Base
+
+
 .primary {
 	color: $base;
 } 
@@ -7,20 +10,18 @@
 .secondary-gb {
 	background-color: $black;
 }
-.text-medium {
-	font-size: .9rem;
-}
-.text-left {
-	text-align: left;
-}
+
+
+
+
+// Display
+
+
 .vh-height {
 	height: 100vh;
 }
 .full-height {
 	height: 100%;
-}
-.no-padding {
-	padding: 0 !important;
 }
 .display-flex {
 	display: flex;
@@ -60,23 +61,33 @@
 	position: relative;
 	z-index: 100;
 }
+
+
+
+
+// Positioning
+
+
 .padding {
 	padding: $base-padding !important;
 }
-.padding-bottom {
-	padding-bottom: $base-padding !important;
-}
 .double-padding {
+	padding: 2 * $base-padding !important;
+}
+.double-padding-top {
 	padding: 2 * $base-padding !important;
 }
 .no-padding {
 	padding: 0 !important;
 }
-.no-padding-top {
-	padding-top: 0 !important;
+.padding-bottom {
+	padding-bottom: $base-padding !important;
 }
 .no-padding-bottom {
 	padding-bottom: 0 !important;
+}
+.no-padding-top {
+	padding-top: 0 !important;
 }
 .margin-bottom {
 	margin-bottom: $base-margin; 
@@ -92,6 +103,22 @@
 }
 .margin-auto {
 	margin: 0 auto;
+}
+
+
+
+
+// Text
+
+
+.text-medium {
+	font-size: .9rem;
+}
+.text-center {
+	text-align: center;
+}
+.text-left {
+	text-align: left;
 }
 .text-align-center {
 	text-align: center;
