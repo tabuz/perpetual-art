@@ -1,3 +1,15 @@
+.primary {
+	color: $base;
+} 
+.secondary {
+	color: $black;
+}
+.text-medium {
+	font-size: .9rem;
+}
+.text-left {
+	text-align: left;
+}
 .vh-height {
 	height: 100vh;
 }
@@ -11,7 +23,9 @@
 	display: flex;
 }
 .flex-center {
-	align-items: center;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .nav-wrapper {
 	z-index: 200;
