@@ -5278,7 +5278,9 @@ input[type=range]:focus::-ms-fill-upper {
   .tap-target-wrapper.open .tap-target-wave::after {
     visibility: visible;
     animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-    transition: opacity .3s, transform .3s, visibility 0s 1s; }
+    transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s; }
 
 .tap-target {
   position: absolute;
@@ -5315,7 +5317,9 @@ input[type=range]:focus::-ms-fill-upper {
     transition: transform .3s; }
   .tap-target-wave::after {
     visibility: hidden;
-    transition: opacity .3s, transform .3s, visibility 0s;
+    transition: opacity .3s,
+ transform .3s,
+ visibility 0s;
     z-index: -1; }
 
 .tap-target-origin {
@@ -6075,7 +6079,8 @@ html {
 
 #gallery {
   background-image: url("../img/gallery-bg-one.png"), url("../img/gallery-bg-two.png");
-  background-position: 10% 23%, right bottom;
+  background-position: 10% 23%,
+ right bottom;
   background-repeat: no-repeat; }
 
 .gallery {
@@ -6300,7 +6305,7 @@ html {
     margin-bottom: 3rem;
     text-align: justify; }
   .details .details-row {
-    background-image: url("/assets/img/damian.jpg");
+    background-image: url("../img/damian.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0% 0%; }
@@ -6366,7 +6371,8 @@ html {
 
 #contact {
   background-image: url("../img/contact-bg-one.png"), url("../img/contact-bg-two.png");
-  background-position: 24% 20%, 79% 37%;
+  background-position: 24% 20%,
+ 79% 37%;
   background-repeat: no-repeat; }
 
 #contact-message {
