@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+html {
+  font-size: 24px;
+}
+body {
+  font: 300 13px/1.6 Raleway, 'Helvetica Neue', Helvetica, Arial;
+  color: $base;
+  transition: all .4s .3s ease-in;
+}
+body,html{
+	min-height: 100vh;
+}
+#sidenav-overlay {
+	z-index: 1 !important;
+}
