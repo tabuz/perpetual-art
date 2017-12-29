@@ -1,9 +1,8 @@
 {
-  "name": "test",
-  "title": "Fiercely quick and opinionated front-ends",
-  "author": "Hossein Karami",
-  "url": "https://HosseinKarami.github.io/fastshell",
-  "version": "1.0.5",
+  "name": "front-end-base",
+  "title": "Base for front-end projects",
+  "author": "Hubert Zelek",
+  "version": "1.0.0",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.6.5",
