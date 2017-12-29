@@ -34,7 +34,6 @@ export function create_component(name, configuration) {
 }
 
 export function partials() {
-    console.log(components, 'components')
     return Object.keys(components)
         .map(name => `{{#partial ${name}}}<${name} />{{/partial}}`)
         .join('\n');

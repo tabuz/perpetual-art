@@ -63,7 +63,8 @@ gulp.task('browser-sync', function() {
     browserSync.init(null, {
         server: {
             baseDir: "app"
-        }
+        },
+        browser: "chrome",
     });
 });
 gulp.task('bs-reload', function () {

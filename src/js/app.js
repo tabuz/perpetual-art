@@ -7,8 +7,6 @@ import {
 import {create_router} from './routing.js';
 
 import './components/page_components/test/test.js';
-import './components/page_components/photo/photo.js';
-
 
 export let router;
 
@@ -30,9 +28,6 @@ window.create_app = () => {
         components,
         data() {},
         computed: {},
-        test_method() {
-        	console.log('Test successfull ; )');
-        },
         current_page() {
             return this.findComponent(this.get('current_page'));
         },
@@ -51,7 +46,6 @@ window.create_app = () => {
                 initialised = app.set({current_page, loading: false});
             }
             return initialised.then(() => {
-                console.log('current-page', current_page)
                 return app.findComponent(current_page);
             });
         },
@@ -73,6 +67,4 @@ window.create_app = () => {
 
     router = create_router(app);
     app.router = router;
-
-    console.log('Finished app initialization ');
 };

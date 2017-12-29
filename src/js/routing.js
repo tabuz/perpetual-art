@@ -2,9 +2,7 @@ export function create_router(app) {
 
     const router = Router({
         '/test'() {
-            console.log('navigates');
             app.show_page('test');
-            console.log('aft test');
         },
     });
 

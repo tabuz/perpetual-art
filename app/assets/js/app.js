@@ -64,8 +64,6 @@
 
 	__webpack_require__(5);
 
-	__webpack_require__(7);
-
 	var router = exports.router = void 0;
 
 	var app_initial_data = {
@@ -82,9 +80,6 @@
 	        data: function data() {},
 
 	        computed: {},
-	        test_method: function test_method() {
-	            console.log('Test successfull ; )');
-	        },
 	        current_page: function current_page() {
 	            return this.findComponent(this.get('current_page'));
 	        },
@@ -104,7 +99,6 @@
 	                initialised = app.set({ current_page: current_page, loading: false });
 	            }
 	            return initialised.then(function () {
-	                console.log('current-page', current_page);
 	                return app.findComponent(current_page);
 	            });
 	        },
@@ -126,8 +120,6 @@
 
 	    exports.router = router = (0, _routing.create_router)(app);
 	    app.router = router;
-
-	    console.log('Finished app initialization ');
 	};
 
 /***/ }),
@@ -182,7 +174,6 @@
 	}
 
 	function partials() {
-	    console.log(components, 'components');
 	    return Object.keys(components).map(function (name) {
 	        return '{{#partial ' + name + '}}<' + name + ' />{{/partial}}';
 	    }).join('\n');
@@ -223,9 +214,7 @@
 
 	    var router = Router({
 	        '/test': function test() {
-	            console.log('navigates');
 	            app.show_page('test');
-	            console.log('aft test');
 	        }
 	    });
 
@@ -276,34 +265,6 @@
 /***/ (function(module, exports) {
 
 	module.exports={"v":3,"t":[{"t":7,"e":"main","f":[{"t":7,"e":"div","a":{"class":"secondary-bg"}}," ",{"t":7,"e":"h1","f":["Test!"]}]}]};
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var _component_helpers = __webpack_require__(2);
-
-	var _photoRactive = __webpack_require__(8);
-
-	var _photoRactive2 = _interopRequireDefault(_photoRactive);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	(0, _component_helpers.create_component)('photo', {
-	    template: _photoRactive2.default,
-	    oninit: function oninit() {
-	        this.set('photo', 'dziala');
-	        this.set('template', _photoRactive2.default);
-	    }
-	});
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports) {
-
-	module.exports={"v":3,"t":[{"t":7,"e":"main","f":[{"t":7,"e":"div","a":{"class":"secondary-bg"}}," ",{"t":7,"e":"h1","f":["PHOTOT!"]}]}]};
 
 /***/ })
 /******/ ]);
