@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title></title>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title></title>
 
-    <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,500,700" rel="stylesheet">
-    <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-</head>
-    <body>
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,500,700" rel="stylesheet">
+        <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+        <script src="lib/director/director.js"></script>
+        <script src="lib/ractive/ractive-legacy.js"></script>
+        <script src="lib/ractive/ractive-ractive/ractive-ractive.js"></script>
         <script src="assets/components/jquery/jquery.min.js"></script>
-        <script src="assets/js/scripts.min.js"></script>
+        <script src="assets/js/app.js"></script>
         <script src="assets/js/smooth-scrool.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
@@ -26,5 +28,12 @@
             easing: 'easeInOutCubic',
           });
         </script>
+        <script>
+            create_app();
+        </script>
+    </head>
+    <body>
+        <div id="page"></div>
+        <button><a href="#/test">Button !</a></button>
     </body>
 </html>
