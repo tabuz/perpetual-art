@@ -13,7 +13,7 @@ export const BaseComponent = Ractive.extend({
 export const components = {};
 
 export function create_component(name, configuration) {
-	let initial_data = configuration.data;
+    let initial_data = configuration.data;
     let get_initial_data;
 
     if (initial_data instanceof Function) {

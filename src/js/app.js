@@ -6,7 +6,14 @@ import {
 } from './component_helpers.js';
 import {create_router} from './routing.js';
 
-import './components/page_components/test/test.js';
+import './components/page_components/home/home.js';
+import './components/page_components/booking/booking.js';
+import './components/page_components/contact/contact.js';
+import './components/page_components/details/details.js';
+import './components/page_components/footer/footer.js';
+import './components/page_components/gallery/gallery.js';
+import './components/page_components/hero/hero.js';
+import './components/page_components/navigation/navigation.js';
 
 export let router;
 
@@ -21,13 +28,19 @@ window.create_app = () => {
     const app = new BaseComponent({
         template: `
             ${partials()}
+            {{#if current_page !== 'hero'}}
+                <navigation/>
+            {{/if}}
             {{#if current_page}}
                 {{>.current_page}}
             {{/if}}
         `,
         components,
-        data() {},
-        computed: {},
+        oninit () {
+            this.set({
+                components_names: Object.keys(this.components)
+            });
+        },
         current_page() {
             return this.findComponent(this.get('current_page'));
         },

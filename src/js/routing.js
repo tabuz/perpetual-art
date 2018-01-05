@@ -1,8 +1,29 @@
 export function create_router(app) {
 
     const router = Router({
-        '/test'() {
-            app.show_page('test');
+        '/'() {
+            app.show_page('hero');
+        },
+        '/home'() {
+            app.show_page('home');
+        },
+        '/booking'() {
+            app.show_page('booking');
+        },
+        '/navigation'() {
+            app.show_page('navigation');
+        },
+        '/gallery'() {
+            app.show_page('gallery');
+        },
+        '/footer'() {
+            app.show_page('footer');
+        },
+        '/details'() {
+            app.show_page('details');
+        },
+        '/contact'() {
+            app.show_page('contact');
         },
     });
 
@@ -11,7 +32,7 @@ export function create_router(app) {
     router.configure({
         notfound() {
             console.error('url not found');
-            app.navigate('test')
+            app.navigate('test');
         },
         before() {
             app.set({
